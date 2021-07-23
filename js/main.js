@@ -34,4 +34,3 @@ document.getElementById('botao').addEventListener('click', function() {
     let ls_array = JSON.parse(localStorage.getItem("infos"));
 });
 
-
