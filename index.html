@@ -15,8 +15,7 @@
     <div class="container1">
         <div class="cabecalho">
             <img class="logo" src="./img/logo.png" alt="logo da empresa" />
-            <a class="entrar" href="#">Entrar</a>
-            <a class="cadastrar" href="#">Cadastrar</a>
+            <a class="cadastrar" href="#cadastro">Quero me Cadastrar</a>
         </div>
     </div>
 
@@ -358,7 +357,65 @@
         <img class="img-etapas" src="./img/etapas.jpg" alt="Imagem das etapas de compra">
     </div>
 
-    
+    <div id="cadastro">
+        <h1 class="titulo">
+            Adicione os itens desejados no carrinho, preencha o formulário, e PRONTO!
+        </h1>
+
+
+    </div>
+
+    <form class="formulario" method="POST">
+        <h3 class="formulario-titulo">Complete seu cadastro</h3>
+        <fieldset>
+            <legend class="form-legenda">Informações Básicas</legend>
+            <div class="input-container">
+                <input name="nome" id="nome" class="input" type="text" placeholder="Digite seu nome completo" required>
+                <label class="input-label" for="nome">Nome</label>
+            </div>
+            <div class="input-container">
+                <input name="email" id="email" class="input" type="email" placeholder="Digite seu email" required>
+                <label class="input-label" for="email">Email</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="form-legenda">Informações Pessoais</legend>
+            <div class="input-container">
+                <input name="nascimento" id="nascimento" class="input" type="text" placeholder="Data de nascimento (dd/mm/aaaa)" required>
+                <label class="input-label" for="nascimento">Data de Nascimento</label>
+            </div>
+            <div class="input-container">
+                <input name="cpf" id="cpf" class="input" type="text" placeholder="Digite seu CPF" required>
+                <label class="input-label" for="cpf">CPF</label>
+            </div>
+            <div class="input-container">
+                <input name="telefone" id="telefone" class="input" type="tel" placeholder="Digite seu telefone com (ddd)" required>
+                <label class="input-label" for="telefone">Telefone</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="form-legenda">Endereço</legend>
+            <div class="input-container">
+                <input name="cep" id="cep" class="input" type="text" placeholder="Digite seu CEP" required>
+                <label class="input-label" for="cep">CEP</label>
+            </div>
+            <div class="input-container">
+                <input name="logradouro" id="logradouro" class="input" type="text" placeholder="Digite seu logradouro, com número" required>
+                <label class="input-label" for="logradouro">Logradouro</label>
+            </div>
+            <div class="input-container">
+                <input name="cidade" id="cidade" class="input" type="text" placeholder="Digite sua cidade" required>
+                <label class="input-label" for="cidade">Cidade</label>
+            </div>
+            <div class="input-container">
+                <input name="estado" id="estado" class="input" type="text" placeholder="Digite seu estado" required>
+                <label class="input-label" for="Estado">Estado</label>
+            </div>
+        </fieldset>
+        <button role="button" type="submit" class="botao">
+            <a href="./cadCompleto.html">Cadastrar</a></button>
+
+    </form>
 
     <script src="https://kit.fontawesome.com/eb431a5bec.js" crossorigin="anonymous"></script>
 
